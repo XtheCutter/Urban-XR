@@ -5,6 +5,8 @@ public class Gate : MonoBehaviour
 {
     [SerializeField]
     private ARMap _arMap;
+    [SerializeField]
+    private GameObject _gateObject;
 
     private void Awake()
     {
@@ -18,6 +20,6 @@ public class Gate : MonoBehaviour
 
     private void EnableItself(int value)
     {
-        gameObject.SetActive(true);
+        _gateObject.SetActive(true);
     }
 }
